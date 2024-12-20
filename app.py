@@ -23,7 +23,7 @@ def predict():
     H=request.args.get('H')
     H=float(H)
     PH=request.args.get('PH')
-    Ph=float(PH)
+    PH=float(PH)
     R=request.args.get('R')
     R=float(R)
     data=[[N,P,K,T,H,PH,R]]
@@ -32,6 +32,6 @@ def predict():
 
 if __name__=="__main__":
     api.run(
-    host='0.0.0.0',
-    port=2000    
+        host='0.0.0.0',
+        port=2000    
     )
